@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?3693678ff6aabe091977d59aa593eff0") format("truetype"), url("./flaticon.woff?3693678ff6aabe091977d59aa593eff0") format("woff"), url("./flaticon.woff2?3693678ff6aabe091977d59aa593eff0") format("woff2"), url("./flaticon.eot?3693678ff6aabe091977d59aa593eff0#iefix") format("embedded-opentype"), url("./flaticon.svg?3693678ff6aabe091977d59aa593eff0#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-user:before {
+  content: "";
+}
+
+.flaticon-heart-shape-outline:before {
+  content: "";
+}
+
+.flaticon-search:before {
+  content: "";
+}
+
+.flaticon-loupe:before {
+  content: "";
+}
+
+.flaticon-user-1:before {
+  content: "";
+}
+
+.flaticon-magnifying-glass:before {
+  content: "";
+}
+
+.flaticon-add:before {
+  content: "";
+}
+
+.flaticon-add-1:before {
+  content: "";
+}
+
+.flaticon-blur:before {
+  content: "";
+}
+
+.flaticon-dots-menu:before {
+  content: "";
+}
+
+.flaticon-down:before {
+  content: "";
+}
+
+.flaticon-volunteer:before {
+  content: "";
+}
+
+.flaticon-heart:before {
+  content: "";
+}
+
+.flaticon-volunteer-2:before {
+  content: "";
+}
+
+.flaticon-magnifying-glass-1:before {
+  content: "";
+}
+
+.flaticon-search-1:before {
+  content: "";
+}
+
+.flaticon-avatar:before {
+  content: "";
+}
+
+.flaticon-padlock:before {
+  content: "";
+}
+
+.flaticon-chat:before {
+  content: "";
+}
+
+.flaticon-chat-1:before {
+  content: "";
+}
+
+.flaticon-plus:before {
+  content: "";
+}
+
+.flaticon-plus-symbol-button:before {
+  content: "";
+}
+
+.flaticon-down-arrow:before {
+  content: "";
+}
+
+.flaticon-down-chevron:before {
+  content: "";
+}
+
+.flaticon-phone-call:before {
+  content: "";
+}
+
+.flaticon-bank:before {
+  content: "";
+}
+
+.flaticon-bank-1:before {
+  content: "";
+}
+
+.flaticon-retirement:before {
+  content: "";
+}
+
+.flaticon-analytics:before {
+  content: "";
+}
+
+.flaticon-profit:before {
+  content: "";
+}
+
+.flaticon-invest:before {
+  content: "";
+}
+
+.flaticon-money:before {
+  content: "";
+}
+
+.flaticon-taxes:before {
+  content: "";
+}
+
+.flaticon-strategy:before {
+  content: "";
+}
+
+.flaticon-right-arrow:before {
+  content: "";
+}
+
+.flaticon-right-arrow-1:before {
+  content: "";
+}
+
+.flaticon-user-2:before {
+  content: "";
+}
+
+.flaticon-user-3:before {
+  content: "";
+}
+
+.flaticon-message:before {
+  content: "";
+}
+
+.flaticon-envelope:before {
+  content: "";
+}
+
+.flaticon-email:before {
+  content: "";
+}
+
+.flaticon-arrow:before {
+  content: "";
+}
+
+.flaticon-chat-2:before {
+  content: "";
+}
+
+.flaticon-notes:before {
+  content: "";
+}
+
+.flaticon-quote:before {
+  content: "";
+}
+/*# sourceMappingURL=flaticon.css.map */

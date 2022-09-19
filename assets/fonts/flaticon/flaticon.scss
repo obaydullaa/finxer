@@ -1,0 +1,205 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?3693678ff6aabe091977d59aa593eff0") format("truetype"),
+url("./flaticon.woff?3693678ff6aabe091977d59aa593eff0") format("woff"),
+url("./flaticon.woff2?3693678ff6aabe091977d59aa593eff0") format("woff2"),
+url("./flaticon.eot?3693678ff6aabe091977d59aa593eff0#iefix") format("embedded-opentype"),
+url("./flaticon.svg?3693678ff6aabe091977d59aa593eff0#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "user": "\f101",
+    "heart-shape-outline": "\f102",
+    "search": "\f103",
+    "loupe": "\f104",
+    "user-1": "\f105",
+    "magnifying-glass": "\f106",
+    "add": "\f107",
+    "add-1": "\f108",
+    "blur": "\f109",
+    "dots-menu": "\f10a",
+    "down": "\f10b",
+    "volunteer": "\f10c",
+    "heart": "\f10d",
+    "volunteer-2": "\f10e",
+    "magnifying-glass-1": "\f10f",
+    "search-1": "\f110",
+    "avatar": "\f111",
+    "padlock": "\f112",
+    "chat": "\f113",
+    "chat-1": "\f114",
+    "plus": "\f115",
+    "plus-symbol-button": "\f116",
+    "down-arrow": "\f117",
+    "down-chevron": "\f118",
+    "phone-call": "\f119",
+    "bank": "\f11a",
+    "bank-1": "\f11b",
+    "retirement": "\f11c",
+    "analytics": "\f11d",
+    "profit": "\f11e",
+    "invest": "\f11f",
+    "money": "\f120",
+    "taxes": "\f121",
+    "strategy": "\f122",
+    "right-arrow": "\f123",
+    "right-arrow-1": "\f124",
+    "user-2": "\f125",
+    "user-3": "\f126",
+    "message": "\f127",
+    "envelope": "\f128",
+    "email": "\f129",
+    "arrow": "\f12a",
+    "chat-2": "\f12b",
+    "notes": "\f12c",
+    "quote": "\f12d",
+);
+
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-heart-shape-outline:before {
+    content: map-get($flaticon-map, "heart-shape-outline");
+}
+.flaticon-search:before {
+    content: map-get($flaticon-map, "search");
+}
+.flaticon-loupe:before {
+    content: map-get($flaticon-map, "loupe");
+}
+.flaticon-user-1:before {
+    content: map-get($flaticon-map, "user-1");
+}
+.flaticon-magnifying-glass:before {
+    content: map-get($flaticon-map, "magnifying-glass");
+}
+.flaticon-add:before {
+    content: map-get($flaticon-map, "add");
+}
+.flaticon-add-1:before {
+    content: map-get($flaticon-map, "add-1");
+}
+.flaticon-blur:before {
+    content: map-get($flaticon-map, "blur");
+}
+.flaticon-dots-menu:before {
+    content: map-get($flaticon-map, "dots-menu");
+}
+.flaticon-down:before {
+    content: map-get($flaticon-map, "down");
+}
+.flaticon-volunteer:before {
+    content: map-get($flaticon-map, "volunteer");
+}
+.flaticon-heart:before {
+    content: map-get($flaticon-map, "heart");
+}
+.flaticon-volunteer-2:before {
+    content: map-get($flaticon-map, "volunteer-2");
+}
+.flaticon-magnifying-glass-1:before {
+    content: map-get($flaticon-map, "magnifying-glass-1");
+}
+.flaticon-search-1:before {
+    content: map-get($flaticon-map, "search-1");
+}
+.flaticon-avatar:before {
+    content: map-get($flaticon-map, "avatar");
+}
+.flaticon-padlock:before {
+    content: map-get($flaticon-map, "padlock");
+}
+.flaticon-chat:before {
+    content: map-get($flaticon-map, "chat");
+}
+.flaticon-chat-1:before {
+    content: map-get($flaticon-map, "chat-1");
+}
+.flaticon-plus:before {
+    content: map-get($flaticon-map, "plus");
+}
+.flaticon-plus-symbol-button:before {
+    content: map-get($flaticon-map, "plus-symbol-button");
+}
+.flaticon-down-arrow:before {
+    content: map-get($flaticon-map, "down-arrow");
+}
+.flaticon-down-chevron:before {
+    content: map-get($flaticon-map, "down-chevron");
+}
+.flaticon-phone-call:before {
+    content: map-get($flaticon-map, "phone-call");
+}
+.flaticon-bank:before {
+    content: map-get($flaticon-map, "bank");
+}
+.flaticon-bank-1:before {
+    content: map-get($flaticon-map, "bank-1");
+}
+.flaticon-retirement:before {
+    content: map-get($flaticon-map, "retirement");
+}
+.flaticon-analytics:before {
+    content: map-get($flaticon-map, "analytics");
+}
+.flaticon-profit:before {
+    content: map-get($flaticon-map, "profit");
+}
+.flaticon-invest:before {
+    content: map-get($flaticon-map, "invest");
+}
+.flaticon-money:before {
+    content: map-get($flaticon-map, "money");
+}
+.flaticon-taxes:before {
+    content: map-get($flaticon-map, "taxes");
+}
+.flaticon-strategy:before {
+    content: map-get($flaticon-map, "strategy");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-right-arrow-1:before {
+    content: map-get($flaticon-map, "right-arrow-1");
+}
+.flaticon-user-2:before {
+    content: map-get($flaticon-map, "user-2");
+}
+.flaticon-user-3:before {
+    content: map-get($flaticon-map, "user-3");
+}
+.flaticon-message:before {
+    content: map-get($flaticon-map, "message");
+}
+.flaticon-envelope:before {
+    content: map-get($flaticon-map, "envelope");
+}
+.flaticon-email:before {
+    content: map-get($flaticon-map, "email");
+}
+.flaticon-arrow:before {
+    content: map-get($flaticon-map, "arrow");
+}
+.flaticon-chat-2:before {
+    content: map-get($flaticon-map, "chat-2");
+}
+.flaticon-notes:before {
+    content: map-get($flaticon-map, "notes");
+}
+.flaticon-quote:before {
+    content: map-get($flaticon-map, "quote");
+}

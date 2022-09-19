@@ -1,0 +1,221 @@
+/*============**  Footer Area **============*/
+.footer-area {
+    background-image: url(/assets/img/footer/footer-bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: $black;
+}
+.footer-border {
+    border-bottom: 1px solid $border_black_soft;
+}
+
+.footer-top-text {
+    &__title {
+        font-size: 45px;
+        color:  $white_color;
+        @media #{$lg-device} {
+            font-size: 38px;
+          }
+        @media #{$md-device} {
+            font-size: 28px;
+          }
+        @media #{$xsm-device} {
+            font-size: 28px;
+            margin-bottom: 20px;
+          }
+        & span {
+            color: $primary-color;
+        }
+    }
+}
+.footer-top-btn {
+    text-align: right;
+    @media #{$xsm-device} {
+        text-align: left;
+      }
+}
+
+
+
+
+.footer-widget {
+    &.fotter-ml {
+        margin-left: 50px;
+        @media #{$md-device} {
+            margin-left: 0px;
+          }           
+           @media #{$xsm-device} {
+            margin-left: 0px;
+          }
+    }
+    &__title {
+        font-weight: 700;
+        color: $white_color;
+        margin-bottom: 25px;
+        text-transform: capitalize;
+    }
+    & p {
+        color: $white_color;
+        margin-bottom: 20px;
+        padding-right: 46px;
+        span {
+            color: $primary-color;
+        }
+    }
+    &__blog-wrap {
+        overflow: hidden;
+        & a {
+            & img {
+                float: left;
+                margin-right: 20px;
+            }
+        }
+        & .blog-content {
+            float: left;
+            width: 53%;
+            & a {
+                font-size: 14px;
+                line-height: 21px;
+                margin-bottom: 5px;
+                transition: all .3s ease-in-out;
+                color: #fff;
+                display: block;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+            & span {
+                color: $white_color;
+                font-size: 12px;
+            }
+        }
+    }
+    &__userful-link {
+        & ul {
+            & li {
+                &:hover{
+                    & a {
+                        color: $link_hover;
+                    }
+                }
+                & a {
+                    color: $white_color;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+    & .footer-subcribe {
+        position: relative;
+        input {
+            height: 50px;
+            width: 270px;
+            padding: 15px;
+            padding-right: 48px;
+            @media #{$lg-device} {
+                width: 235px;
+              }
+            @media #{$xsm-device} {
+                width: 200px;
+              }
+        }
+        button {
+            position: absolute;
+            height: 36px;
+            width: 36px;
+            border: 0;
+            outline: 0;
+            left: 225px;
+            top: 7px;
+            background: $primary-color;
+            color: $white_color;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+            @media #{$lg-device} {
+                left: 190px;
+              }
+            @media #{$xsm-device} {
+                left: 160px;
+              }
+            &:hover {
+                background-color: $black;
+            }
+        }
+    }
+    &__social {
+        ul {
+            display: flex;
+            li {
+                margin-right: 15px;
+                &:last-child {
+                    margin-right: 0px;
+                }
+                &:hover{
+                    & a {
+                        color: $link_hover;
+                    }
+                }
+                a {
+                    font-size: 13px;
+                    color: $white_color;
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    padding: 30px 0 15px;
+	border-top: 1px solid $border_black_soft;
+	margin-top: 50px;
+    @media #{$xsm-device} {
+        margin-top: 20px;
+      }
+
+    &__logo {
+        @media #{$xsm-device} {
+            text-align: center;
+        }
+    }
+&__copyright-text {
+    &  p {
+        color: $white_color;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        text-align: center;
+        span {
+            color: $primary-color;
+        }
+      }
+    }
+    &__menu {
+        & ul {
+            display: flex;
+            justify-content: end;
+            @media #{$md-device} {
+                justify-content: start;
+              }
+            @media #{$xsm-device} {
+                justify-content: center;
+              }
+
+            & li {
+                margin-left: 20px;
+                color: $white_color;
+                font-size: 15px;
+                &:first-child {
+                    margin-left: 0px;
+                }
+                & a {
+                    color: $white_color;
+                    &:hover{
+                        color: $link_hover;
+                    }
+                  }
+              }
+          }
+    }
+}

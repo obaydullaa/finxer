@@ -1,0 +1,123 @@
+
+/*============**  Questions Area **============*/
+.questions-area {
+    // &.pb-150 {
+    //     @media #{$md-device} {
+    //         padding-bottom: 0px;
+    //     }
+    // }
+    // &.pb-150 {
+    //     @media #{$xsm-device} {
+    //         padding-bottom: 0px;
+    //     }
+    // }
+    & .section-title-wrap {
+        &__title {
+            @media #{$lg-device} {
+                font-size: 35px;
+            }
+        }  
+    }
+}
+.questions-img-area {
+
+    @media #{$md-device} {
+        margin-bottom: 70px;
+    }
+    @media #{$xsm-device} {
+        margin-bottom: 30px;
+    }
+    &__images {
+        position: relative;
+        & .small-img {
+            position: absolute;
+            bottom: -16%;
+            right: 5%;
+             @media #{$xsm-device} {
+                position: static;
+                margin-top: -127px;
+                margin-left: 3%;
+            }   
+          }
+          & .questions-Shapes {
+            position: absolute;
+            left: -4%;
+            top: 12%;
+            z-index: -2;
+            @media #{$xsm-device} {
+                display: none;
+            }
+        }
+    }
+}
+.ask-question-wrap {
+    margin-left: 40px;
+    @media #{$md-device} {
+        margin-left: 0px;;
+    }
+    @media #{$xsm-device} {
+        margin-left: 0px;;
+    }
+}
+.collapse-wrappper{
+    & .card {
+        margin-bottom: 25px;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 0;
+        background: $white_color;
+        & .card-header {
+            padding: 0;
+            border: 0;
+            &  h2 {
+                & a {
+                    font-size: 16px;
+                    color: $black;
+                    font-weight: 600;
+                    display: block;
+                    padding: 15px 25px;
+                    text-decoration: none;
+                    font-family: $nunito_sans;
+                    position: relative;
+                    &.btn-link {
+                        background: $primary-color;
+                        color: $white_color;
+                        &.collapsed {
+                            background: $gray_bg;
+                            color: $black;
+                        }
+                    }
+                    @media #{$xsm-device} {
+                        padding-right: 48px;
+                    }
+                    
+                    &::after {
+                        position: absolute;
+                        content: "\f068";
+                        font-family: 'Font Awesome\ 5 Free';
+                        font-size: 15px;
+                        font-weight: 700;
+                        height: 36px;
+                        width: 36px;
+                        background: $white_color;
+                        text-align: center;
+                        line-height: 36px;
+                        color: $primary-color;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 2%;
+                    }
+                    &.collapsed:after {
+                        content: "\f067";
+                       }
+                }
+              }
+        }
+        & .card-body {
+            padding: 0px 22px 10px 20px;
+            font-size: 15px;
+            margin-top: 15px;
+        }
+        
+    }
+}

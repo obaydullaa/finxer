@@ -1,0 +1,39 @@
+
+/*============**  Errorpage Area **============*/
+.error-content {
+    &__head {
+        margin-bottom: 40px;
+        & span {
+            font-size: 150px;
+            font-weight: 700;
+            display: iline-block;
+            padding: 0 10px;
+            @media #{$xsm-device} {
+                font-size: 100px; 
+                padding: 0 5px;    
+            }
+          }
+          & .error-red {
+            color: red;
+          }
+      }
+      &__desc {
+        margin-bottom: 30px;
+        & h4 {
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            @media #{$xsm-device} {
+                font-size: 18px;    
+            }
+          }
+          & p {
+            font-size: 17px;
+            text-transform: capitalize;
+            @media #{$xsm-device} {
+                font-size: 14px;    
+            }
+          }
+      }
+}

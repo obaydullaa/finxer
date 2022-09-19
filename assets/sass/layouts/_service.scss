@@ -1,0 +1,258 @@
+/*============**  Service Area  **============*/
+.service-area {
+    &.service-bg {
+        background-image: url(/assets/img/service/service-bg.png);
+        background-position: left top;
+        background-repeat: no-repeat;
+    }
+}
+
+.service-single {    
+    padding: 55px 40px;
+    transition: all .3s ease-in-out;
+    position: relative;
+    background-color: $white_color;
+    @media #{$lg-device} {
+        padding: 55px 25px;
+    }
+              
+    &__number {
+        position: absolute;
+        top: 28px;
+        right: 30px;
+        height: 36px;
+        width: 36px;
+        background-color: $service_icon_hover_color;
+        line-height: 36px;
+        text-align: center;
+        border-radius: 50%;
+        color: $white_color;
+    }
+    &__icon-box {
+        position: relative;
+            &::before {
+                @include afbf;
+                top: -16px;
+                left: 48%;
+                height: 48px;
+                width: 48px;
+                background-color: $service_icon_color;
+                border-radius: 50%;
+                transition : all .3s ease-in-out;
+            }
+        
+         & i {
+             font-size: 50px;
+             color: $primary-color;
+             position: relative;
+             transition : all .3s ease-in-out;
+         }
+    }
+    &__content {
+        & h3 {
+            font-size: 26px;
+            margin-bottom: 24px;
+            transition : all .3s ease-in-out;
+        }
+        & p {
+            transition : all .3s ease-in-out;
+        }
+    }
+    &__plus-icon {
+        & i {
+            color: $primary-color;
+            height: 40px;
+            width: 40px;
+            background: $white_color;
+            line-height: 40px;
+            border-radius: 5px;
+        }
+    }   
+     &:hover {
+        background-color: $primary-color; 
+        & .service-single__icon-box {
+            & i{
+                color: $white_color;
+            }
+            &::before {
+                background-color: $service_icon_hover_color;
+            }
+        }
+        & .service-single__content {
+            & h3 {
+                color: $white_color;
+            }
+            & p {
+                color: $white_color;
+            }
+        }
+    }
+}
+
+/*===== Service Details =====*/
+.sidebar-widget {
+
+    &.service-sid-bg {
+        background-image: url(/assets/img/service/service.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+        &::after {
+            position: absolute;
+            content: " ";
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: $black;
+            opacity: .9;
+            transition: all .3s ease-in-out;
+            z-index: -1;
+        }
+        & .title {
+            &.team-details {
+                color: $white_color;
+                margin-bottom: 12px;
+            }
+        }
+        & p {
+            color: $white_color;
+            margin-bottom: 20px;
+        }
+        & .contact-info-team {
+            & ul {
+                margin-bottom: 0px;
+                  & li {
+                    display: flex;
+                    margin-bottom: 20px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    & .footer-icon {
+                        margin-right: 20px;
+                        & i {
+                            color: $white_color;
+                            font-size: 25px;
+                        }
+                    }
+                    .footer-address-info  {
+                        & h6 {
+                            font-size: 17px;
+                            color: $gray;
+                            font-weight: 700;
+                            margin-bottom: 5px;
+                        }
+                    }
+                    & a {
+                        color: $white_color;
+                        margin-bottom: 0;
+                        font-size: 18px;
+                        line-height: 24px;
+                        font-weight: 700;
+                        @media #{$xsm-device} {
+                            font-size: 15px;
+                            font-weight: 600;
+                        }
+                    }
+                    & p {
+                        color: $gray;
+                        margin-bottom: 0;
+                        font-size: 15px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Progress bar */
+.service-details-prog-wrap  {
+    & .blog-title {
+        margin-bottom: 20px;
+    }
+}
+.single-progress-bar {
+	position: relative;
+    margin-bottom: 20px;
+}
+.single-progress-bar {
+    & h4 {
+        font-size: 18px;
+    }
+    & .progress {
+        height: 8px;
+        background: $bolog-sidebar-input-bg;
+        & h5 {
+            font-size: 18px;
+            position: absolute;
+            top: 0px;
+            right: 15px;
+        }
+        & .progress-bar {
+            height: 8px;
+          }
+    }
+}
+
+  /*Bank service*/
+.service-bank-wrap {
+    background: $service_detail_sec-bg;
+    padding: 40px 30px;
+    transition: all .3s ease-in-out;
+    &__single-bank {
+        display: flex;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $gray;
+        transition: all .3s ease-in-out;
+        & i {
+            color: $primary-color;
+            font-size: 35px;
+            margin-right: 25px;
+            transition: all .3s ease-in-out;
+          }
+      }
+      &__text {
+        & h4 {
+          color: $black;
+          font-size:21px;
+          text-transform: uppercase;
+          font-weight: 700;
+          transition: all .3s ease-in-out;
+          @media #{$xsm-device} {
+            font-size:17px;
+            font-weight: 600;
+        }
+        }
+    }
+      &__desc {
+          & p {
+            color: $black;
+            transition: all .3s ease-in-out;
+          }
+      }
+      &:hover {
+        background-color: $black;
+        &__single-bank {
+            border-bottom: 1px solid $gray;
+        }
+        & i {
+            color: $white_color;
+        }
+        & h4  {
+            color: $white_color;
+        }
+        & p {
+            color: $white_color;
+        }
+      }
+
+      &__btn {
+        &:hover {
+           color: $white_color;
+        }
+    }
+  }

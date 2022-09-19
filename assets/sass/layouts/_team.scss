@@ -1,0 +1,368 @@
+/*============**  Team Area **============*/
+.team-area {
+    background-color: $gray_bg;
+    .container {
+        max-width: 1367px;
+    }
+    & .team-shape-left {
+        position: absolute;
+        left: -3%;
+        bottom: 22%;    
+        @media #{$xl-device} {
+            left: 13%;
+            top: -20%
+        }
+        @media #{$lg-device} {
+            left: 6%;
+            top: -20%
+        }
+        @media #{$md-device} {
+            left: 13%;
+            top: -16%;
+        }
+    }
+    & .team-shape-right{
+        position: absolute;
+        right: -3%;
+        top: 6%;   
+         @media #{$xl-device} {
+            right: 13%;
+            top: -19%;
+         }
+         @media #{$lg-device} {
+            right: 6%;
+            top: -19%;
+         }
+         @media #{$md-device} {
+            right: 13%;
+            top: -16%;
+         }
+    }
+    & .team-shape-red-lb{
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+         @media #{$xl-device} {
+            top: -12%;
+            height: 30%;
+         }
+         @media #{$lg-device} {
+            top: -12%;
+            height: 30%;
+         }
+         @media #{$md-device} {
+            top: -29%;
+         }
+
+    }
+    & .team-shape-red-rt{
+        position: absolute;
+        right: 0%;
+        top: 3%;
+         @media #{$xl-device} {
+            height: 15%;
+        }
+         @media #{$lg-device} {
+            height: 15%;
+        }
+    }
+    & .team-shape-rt-soft{
+        position: absolute;
+        right: 0%;
+        top: 4%;
+         @media #{$xl-device} {
+            width: 31%;
+        }
+         @media #{$lg-device} {
+            width: 31%;
+        }
+    }
+}
+
+.team {
+    overflow: hidden;
+    &__thumb {
+        position: relative;
+        overflow: hidden;
+        img {
+            transition: all .3s ease-in-out;
+            width: 100%;
+            transform: scale(1);
+            @media #{$xsm-device} {
+                width: 100%
+            }
+        }
+        & .social {
+            position: absolute;
+            top: 15px;
+            right: -20px;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .3s ease-in-out;
+            & ul {
+                & li {
+                    margin-bottom: 8px;
+                    & a {
+                    display: block;
+                    height: 28px;
+                    width: 30px;
+                    text-align: center;
+                    line-height: 28px;
+                    color: $black;
+                    background-color: $white_color;
+                    display: inline-block;
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        background-color: $primary-color;
+                        color: $white_color;
+                    }
+                    }
+                }
+            }
+
+        }
+        &::after {
+            @include  afbf;
+            top: -20px;
+            left: -20px;
+            height: 100px;
+            width: 100px;
+            border-top: 50px solid $primary-color;
+            border-bottom: 50px solid transparent;
+            border-left: 50px solid $primary-color;
+            border-right: 50px solid transparent;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .3s ease-in-out;
+            z-index: 1;
+        }
+        &::before {
+            @include  afbf;
+            bottom: -20px;
+            right: -20px;
+            height: 100px;
+            width: 100px;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid $primary-color;
+            border-left: 50px solid transparent;
+            border-right: 50px solid $primary-color;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s ease-in-out;
+            z-index: 1;
+        }
+    }
+    &__content {
+        & span {
+            font-size: 14px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 4px;
+        }
+        & a {
+            &:hover {
+                color: $primary-color;
+            }
+        }   
+         
+    }
+
+    &:hover {
+        & .team__thumb {
+            & img {
+                transform: scale(1.1);
+            }
+            & .social {
+                    opacity: 1;
+                    visibility: visible;
+                    right: 20px;
+            }
+        }
+        & .team__thumb {
+            &::after {
+                visibility: visible;
+                opacity: 1;
+                top: 0px;
+                left: 0px;
+            }
+            &::before {
+                visibility: visible;
+                opacity: 1;
+                bottom: 0px;
+                right: 0px;
+            }
+        }
+
+    }
+}
+
+/* Team brand area */
+.brand-area {
+    &.team-brand-area {
+        margin-top: 0;
+        & .single-brand {
+            @media #{$xsm-device} {
+                padding: 30px 0;
+            }
+            @media #{$sm-device} {
+                padding: 45px 0;
+            }
+        }
+    }
+}
+
+/*===== Team Details ====*/
+
+.team-details {
+    // padding-top: 80px;
+    @media #{$lg-device} {
+        padding-top: 0;
+    }
+    @media #{$md-device} {
+        padding-top: 0;
+    }
+    @media #{$xsm-device} {
+        padding-top: 0;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    &__subtitle {
+        color: $primary-color;
+    }
+}
+
+.team-deails-thumb {
+    & img {
+        width: 100%;
+        padding-right: 50px;
+        @media #{$lg-device,$md-device,$xsm-device} {
+            padding-right: 0;
+        }
+        // @media #{$md-device} {
+        //     padding-right: 0;
+        // }
+        // @media #{$xsm-device} {
+        //     padding-right: 0;
+        // }
+    }
+}
+
+.team-deails-text  {
+    padding-top: 10px;
+    & h4 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+}
+
+/*===== Team Skill bar*/
+.team-single-skill-wrap{
+    & .skillbar-title {
+        font-size: 15px;
+        color: $black;
+        font-weight: 700;
+    }
+    & .skillbar {
+        background: $white_color;
+        border: 1px solid $primary-color;
+        height: 18px;
+        border-radius: 30px;
+        overflow: visible;
+        padding: 3px;
+        margin: 10px 0 20px;
+        line-height: 7px;
+        position: relative;
+        width: 100;
+
+    & .skillbar-bar {
+        background: $primary-color;
+        height: 10px;
+        margin-bottom: 0;
+        overflow: visible !important;
+        line-height: 7px;
+        border-radius: 30px;
+        }
+        & .skill-bar-percent {
+            height: 30px;
+            line-height: 30px;
+            position: absolute;
+            top: -38px;
+            font-size: 16px;
+            right: 70px;
+            color: $black;
+            font-weight: 700;
+        }
+    }
+}
+
+.skill-content-wrap {
+    & .social  {
+        margin-bottom: 50px;
+        & ul {
+            & li {
+                display: inline-block;
+                margin-right: 10px;
+                & a {
+                    height: 45px;
+                    width: 45px;
+                    background: $service_icon_color;
+                    display: block;
+                    text-align: center;
+                    line-height: 45px;
+                    border-radius: 50%;
+                    color: $black;
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        background-color: $primary-color;
+                        color: $white_color;
+                    }
+                  }
+            }
+        }
+    }
+    & .contact-info-team {
+        & ul {
+            margin-bottom: 25px;
+              & li {
+                display: flex;
+                margin-bottom: 10px;
+                & .footer-icon {
+                    margin-right: 20px;
+                    i {
+                        color: $primary-color;
+                    }
+                }
+                a {
+                    color: $black;
+                    margin-bottom: 0;
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+                p {
+                    color: $black;
+                    margin-bottom: 0;
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+
+/* Details teamk brand */
+.brand-area  {
+    &.details-team-area{
+        margin: 0;
+        & .single-brand {
+            padding: 0px 0 40px 0;
+            @media #{$xsm-device} {
+                padding: 0px 0 40px 0;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,7 @@
+@mixin  afbf {
+    position: absolute;
+    content: "";
+}
+@mixin transition($time) {
+	transition: all $time ease-out 0s;
+}

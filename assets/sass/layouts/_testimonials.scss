@@ -1,0 +1,120 @@
+/*============**  Testimonials Area **============*/
+.testimonials-area {
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    &.testimonials-bg {
+      background-image: url(/assets/img/testimonials/testimonial-bg.jpg);
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center center;
+  
+    }
+}
+.testimonials {
+    &__content {
+        & img {
+            margin-bottom: 10px;
+            width: inherit !important;
+            display: inline-block !important;
+            
+          }
+          & p {
+            padding: 0 51px;
+            font-size: 24px;
+            color: $testimonials_des_color;
+            line-height: 1.4;
+            margin-bottom: 45px;
+            @media #{$xsm-device} {
+              font-size: 18px;
+            }
+            & i {
+                color: $primary-color;
+            }
+        }
+        & .author  {
+            & h4 {
+                font-size: 24px;
+                font-weight: 700;
+                text-transform: capitalize;
+              }
+            & span {
+                font-size: 18px;
+                color: $primary-color;
+                text-transform: capitalize;
+              }
+        }
+    }
+}
+
+// Dots 
+
+.testimonials-active .owl-dots owl-dit span {
+    width: 10px;
+    height: 10px;
+    background: $primary-color;
+    display: inline-block;
+  }
+  .testimonials-active .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    background: $primary-color;
+    display: inline-block;
+    margin: 0px 7px;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+  }
+  .testimonials-active .owl-dots {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .testimonials-active .owl-dots .owl-dot.active {
+    width: 15px;
+    height: 15px;
+  }
+
+
+//   Arrow 
+
+  .testimonials-active .owl-nav div {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    @media #{$xsm-device} {
+      display: none;
+    }
+
+  }
+  .testimonials-active .owl-next {
+    left: auto;
+    right: -116px;
+    transition: all .3s ease-in-out;
+    @media #{$xl-device} {
+      right: 0px;
+    }
+    @media #{$lg-device} {
+      right: 0px;
+    }
+    @media #{$md-device} {
+      right: 0px;
+    }
+  }
+  .testimonials-active .owl-prev {
+    left: -112px;
+    transition: all .3s ease-in-out;
+    @media #{$xl-device} {
+      left: 0px;
+    }
+    @media #{$lg-device} {
+      left: 0px;
+    }
+    @media #{$md-device} {
+      left: 0px;
+    }
+  }
+  .testimonials-active .owl-nav .owl-prev:hover i, 
+  .testimonials-active .owl-nav .owl-next:hover i {
+    color: $primary-color;
+  }

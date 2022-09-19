@@ -1,0 +1,21 @@
+/*============**  Brand  Area **============*/
+.brand-area {
+    margin-top: -113px;
+}
+.brand-active  {
+    padding: 0px 70px;
+	background: $white_color;
+    .single-brand {
+        position: relative;
+        padding: 60px 0;
+        & img {
+            width: inherit;
+            display: block;
+            -webkit-filter: grayscale(100%);
+            transition: all 0.3 ease-in-out;
+            &:hover {
+                -webkit-filter: grayscale(0);
+            }
+        }      
+    }
+}

@@ -1,0 +1,115 @@
+/*============**  Contact Area  **============*/
+.contact-area {
+    background-color: $gray_bg;
+    & .section-title-wrap {
+        &__title {
+            @media #{$md-device} {
+                font-size: 35px;
+            }
+        }  
+    }
+    position: relative;
+    & .google-map {
+        & iframe {
+            position: absolute;
+            height: 87%;
+            left: 0;
+            width: 43%;
+            @media #{$xl-device} {
+                width: 41%;
+            }
+            @media #{$lg-device} {
+                width: 49%;
+            }
+            @media #{$md-device} {
+                display: none;
+            }
+            @media #{$xsm-device} {
+                display: none;
+            }
+        }
+    }
+}
+.contact-box {
+    position: relative;
+    & i {
+        position: absolute;
+        right: 20px;
+        line-height: 63px;
+        color: $primary_color;
+    }
+    &__contact-home {
+        height: 60px;
+        padding: 15px;
+        padding-right: 45px;
+        width: 100%;
+        box-shadow: 0px 0px 25px $contact_shado;
+        border: 0;
+        border: 1px solid transparent;
+        transition: all .3s ease-in-out;
+        &:focus {
+            border: 1px solid $primary-color;
+        }
+    &.select {
+        background-color: $white_color;
+        color: $placeholder_color;        
+        margin-bottom: 50px;
+        font-size: 16px;
+        & ul {
+            width: 50%;
+        }
+    }
+    &.text-area {
+        height: 200px;
+        resize:none;
+        border: 1px solid transparent;
+        transition: all .3s ease-in-out;
+        &:focus {
+            border: 1px solid $primary-color;
+        }
+    }
+
+    }
+}
+button.contact-btn {
+    border: 0;
+    cursor: pointer
+}
+/*============** Single  Contact  **============*/
+
+.contact-info {
+    &__addres-wrap {
+        & .single-info {
+            display: flex;
+            & .cont-icon {
+                margin-right: 25px;
+                & i {
+                    font-size: 50px;
+                    color: red;
+                  }
+            }
+            & .cont-text  {
+                & h5 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                    text-transform: capitalize;
+                  }
+                  & h6 {
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: $blog-meta;
+                }
+            }
+        }
+    }
+}
+
+.contact-google-map-area {
+    & .contact-google-map {
+        & iframe {
+            width: 100%;
+            height: 500px;
+        }
+    }
+}

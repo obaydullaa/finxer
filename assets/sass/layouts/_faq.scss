@@ -1,0 +1,37 @@
+/*============**  Faq Area **============*/
+.collapse-wrappper {
+    &.faq-ques {
+        & .card {
+            & .card-header {
+                & h2 {
+                    & a {
+                        font-size: 22px;
+                        @media #{$xsm-device} {
+                            font-size: 18px;    
+                        }
+                    }
+                }
+            }
+            & .card-body {
+                font-size: 17px;
+                @media #{$xsm-device} {
+                    font-size: 15px;    
+                }
+            }
+        }
+    }
+}
+
+.faq-contact {
+    &__title {
+        & h3 {
+            font-size: 35px;
+            @media #{$xsm-device} {
+                font-size: 25px;    
+            }
+            @media #{$sm-device} {
+                font-size: 35px;    
+            }
+        }
+    }
+}

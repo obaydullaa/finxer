@@ -1,0 +1,346 @@
+/*============**  Header Area **============*/
+.header-area {
+    @media #{$extra-big-device} {
+        .container {
+            max-width: 1400px;
+        }
+    }
+    @media #{$xl-device} {
+        .container {
+            max-width: 1300px;
+        }
+    }
+
+    &.transparent-header {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        right: 0;
+        z-index: 5;
+    }
+ 
+    .header-top {
+        .container {
+            .header-top-bg{
+                background-color: $header_top_bg;
+                padding: 12px 30px;
+            }
+            .header-top-left {
+                ul {
+                    @media #{$xsm-device} {
+                        text-align: center;
+                      }
+                    li {
+                        display: inline;
+                        margin-right: 15px;
+
+                        &:last-child {
+                            margin-right: 0;
+                            & a {
+                                text-decoration: underline;
+                            }
+                        }
+                        a {
+                            color: $white_color;
+                            img {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .header-top-right {
+                display: flex;
+                justify-content: end;
+                @media #{$xsm-device} {
+                    justify-content: center;
+                  }
+                .header-top-social {
+                    ul {
+                        display: flex;
+                        li {
+                            margin-right: 14px;
+                            position: relative;
+                            a {
+                                font-size: 14px;
+                                color: $white_color;
+                            }
+                            &:last-child::before{
+                                @include afbf;
+                                width: 2px;
+                                height: 12px;
+                                background-color: $white_color;
+                                top: 8px;
+                                left: 28px;
+                                z-index: 1;
+                            }
+                        }
+                    }
+                }
+                .header-lang-wrap {
+                    select {
+                        border: 0;
+                        margin-left: 10px;
+                        background: none;
+                        color: $white_color;
+                        font-size: 14px;
+                        option {
+                            background: $black;
+                            &:hover {
+                                background: $black;
+                        }
+                    }
+                }
+            }
+        
+        }
+    }
+
+}
+
+
+.header-menu {
+    .header-bg{
+        background-color: $white_color;
+        & .header-logo{ 
+            & a {
+                background-color: $primary-bg;
+                & img {
+                    background-color: $primary-bg;
+                    padding: 28px 33px 28px 15px;
+                    width: 200px;
+                    @media #{$xl-device} {
+                        padding: 30px 24px 30px 16px;
+                    }
+                    @media #{$md-device} {
+                        padding: 20px 33px 20px 15px;
+                        max-width: 160px;
+                    }
+                    @media #{$xsm-device} {
+                        padding: 20px 33px 20px 15px;
+                        max-width: 160px;
+                    }
+                } 
+            }
+        }
+        & .main-menu {
+            ul {
+                display: flex;
+                justify-content: end;
+                li {
+                    margin-right: 40px;
+                    position: relative;    
+                    @media #{$xl-device} {
+                        margin-right: 31px;
+                    }
+                    &:hover.menu-item-has-children:after {
+                        color: $link_hover;
+                    }
+                    &:hover > a {
+                        color: $link_hover;
+                    }
+                    &:hover ul.sub-menu {
+                        opacity: 1;
+                        visibility: visible;
+                        transform: scale(100%);
+                        top: 100%;
+                    }
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                    ul.sub-menu {
+                        position: absolute;
+                        top: 50%;
+                        background: $black;
+                        min-width: 220px;
+                        display: inline;
+                        left: -4px;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all .3s ease-in-out;
+                        transform: scale(50%);
+                        z-index: 2;
+                            li {
+                                margin-right: 0;
+                                border-bottom: 1px solid $menu_border_bottom;
+                                &:hover > ul.sub-menu {
+                                    visibility: visible;
+                                    opacity: 1;
+                                    left: 100%;
+                                }
+                                ul.sub-menu {
+                                    left: 80%;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    transition: all .3s ease-in-out;
+                                    top: 0;
+                                    li {
+                                        &:hover ul.sub-menu {
+                                            visibility: visible;
+                                            opacity: 1;
+                                            left: 100%;
+                                        }
+                                        ul.sub-menui {
+                                            left: 80%;
+                                            visibility: hidden;
+                                            opacity: 0;
+                                            transition: all .3s ease-in-out;
+                                        }
+                                    }
+                                }
+                                &:last-child {
+                                    border-bottom: 0;
+                                }
+                                &:hover > a {
+                                    padding: 10px 25px;
+                                    color: $link_hover;
+                                  }
+                                a {
+                                    margin: 0;
+                                    padding: 10px 20px;
+                                    transition: .3s;
+                                    display: inline-block;
+                                    color: $white_color;
+                                    font-size: 15px;
+                                }
+
+                            }
+                    }
+                    &.menu-item-has-children {
+                        position: relative;
+                        &:after {
+                            position: absolute;
+                            content: "\f078";
+                            font-weight: 700;
+                            top: 52%;
+                            transform: translateY(-50%);
+                            right: -14px;
+                            font-family: "Font Awesome 5 Free";
+                            font-size: 11px;
+                        }
+                    }
+                    & a {
+                        display: inline-block;
+                        text-transform: capitalize;
+                        font-weight: 700;
+                        color: $black;
+                        font-size: 16px;
+                        transition: all 0.3s ease-in-out;
+                        padding: 34px 0;
+                        @media #{$xl-device} {
+                            font-size: 15px;
+                        }
+                        }
+                    }
+                } 
+            }
+        }
+
+        .header-contact-right {
+                display: flex;
+                justify-content: end;
+                padding-right: 40px;
+                align-items: center;
+                @media #{$xl-device} {
+                    padding-right: 30px;
+                }
+                @media #{$lg-device} {
+                    padding-right: 0px;
+                }
+
+            .phone-icon {
+                display: flex;
+                align-items: center;
+                margin-top: -4px;
+                i::before {
+                    display: inline-block;
+                    color: $primary-bg;
+                    font-size: 18px;
+                    margin-right: 22px;
+                    margin-bottom: 2px;
+                    height: 46px;
+                    width: 46px;
+                    background: $service_icon_color;
+                    text-align: center;
+                    line-height: 47px;
+                    border-radius: 50%;
+                    @media #{$xl-device} {
+                        margin-right: 15px;
+                    }
+                }
+            }
+            .phone-number {
+                margin-right: 25px;
+                margin-top: 5px;
+                @media #{$xl-device} {
+                    margin-right: 20px;
+                }
+                span {
+                    font-size: 12px;
+                    text-transform: capitalize;
+                    color: $header_phone_text_color;
+                    font-weight: 600;
+                    margin-bottom: -1px
+                }
+                a {
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $black;
+                    @media #{$xl-device} {
+                        font-size: 16px;
+                    }
+                }
+            }
+            a {
+                transition: all .3s ease-in-out;
+            }
+            .menu-icon {
+                & .menubar {
+                    padding: 14px 13px 16px;
+                    padding-right: 13px;
+                    background: transparent;
+                    max-width: 50px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-radius: 2px;
+                    padding-right: 0;
+                    margin-left: 4px;
+                    cursor: pointer;
+                    span {
+                        height: 6px;
+                        width: 6px;
+                        display: block;
+                        background: $primary-color;
+                        border-radius: 50%;
+                        transition: none;
+                        list-style: none;
+                        transition: all 0.3s ease;
+                        margin: 2px 3px;
+                    }
+                }
+
+            }
+            & .header-contact-btn {
+            & a.contact-btn{
+                padding: 10px 32px;
+                background: $primary-color;
+                color: $white_color;
+                text-transform: capitalize;
+                font-size: 16px;
+                font-weight: 600;
+                display: inline-block;
+                border-radius: 30px;
+                &:hover {
+                    background-color: $black;
+                }
+                @media #{$md-device} {
+                    margin-top: -12px;
+                    margin-right: 60px;
+                    }
+                }
+            }
+        }
+    }
+}

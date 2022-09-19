@@ -1,0 +1,125 @@
+/*============**  Skills Area **============*/
+.skill-area {
+    background-color: $gray_bg;
+    .container {
+        img.skill-shape {
+            position: absolute;
+            top: 18%;
+            left: -7%;
+            @media #{$lg-device} {
+                display: none;
+            }
+            @media #{$md-device} {
+                display: none;
+            }
+            @media #{$xsm-device} {
+                display: none;
+            }
+        }
+    }
+}
+.skill-text {
+    & .section-title-wrap {
+        &__title {
+            @media #{$lg-device} {
+                font-size: 35px;
+            }
+        }
+    }
+    &__cta{
+        & i {
+            height: 72px;
+            width: 66px;
+            background: $primary-color;
+            text-align: center;
+            line-height: 72px;
+            color: $white_color;
+            font-size: 20px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        & a {
+            font-size: 22px;
+            font-weight: 700;
+            display: inline-block;
+            background: $white_color;
+            padding: 21px 30px;
+            border-radius: 0px 5px 5px 0px;
+            margin-left: -3px;
+            color: $black;
+        }
+    }
+}
+.skill-warp {
+    display: flex;
+    justify-content: center;
+    @media #{$lg-device} {
+        justify-content: start;
+    }
+    @media #{$md-device} {
+        justify-content: start;
+    }
+    @media #{$xsm-device} {
+        justify-content: start;
+        flex-direction: column;
+    }
+    @media #{$sm-device} {
+        justify-content: start;
+        display: flex;
+        flex-direction: row;
+    }
+    &__single-skill {
+        width: 215px;
+        height: 250px;
+        background: $primary-color;
+        & .skill-box {
+            text-align: center;
+            margin-top: 50px;
+            position: relative;
+            & h2 {
+                position: absolute;
+                top: 38px;
+                right: 78px;
+                color: #fff;
+                font-size: 35px;
+                display: inline-block;
+                & span {
+                    font-size: 16px;
+                    margin-left: -7px;
+                }
+            }
+        }
+        & h4 {
+            font-size: 18px;
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            color: $white_color;
+            font-weight: 600;
+            margin-top: 10px;
+            position: relative;
+        }
+        &.skill-bg-img {
+            margin-top: 44px;
+            margin-left: 35px;
+            background-image: url(/assets/img/skill/single-skill-bg.jpg);
+            position: relative;
+            @media #{$xsm-device} {
+                margin-top: 30px;
+                margin-left: 0px;
+            }            
+            @media #{$sm-device} {
+                margin-left: 35px;
+            }            
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: $overlay;
+                opacity: 91%;
+            }
+        }
+    }
+   
+}

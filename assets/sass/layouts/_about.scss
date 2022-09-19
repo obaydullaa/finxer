@@ -1,0 +1,156 @@
+/*============**  About Area  **============*/
+
+.about-left {
+    &__main-thumb {
+        position: relative;
+        z-index: 1;
+        & img {
+            @media #{$md-device} {
+               width: 100%;
+            }
+        }
+        & .play-btn{
+            position: absolute;
+            height: 72px;
+            width: 76px;
+            line-height: 72px;
+            text-align: center;
+            color: $primary-color;
+            font-size: 14px;
+            font-weight: 600;
+            background-color: $white_color;
+            top: 48%;
+            right: 48%;
+            transform: translate(-50%, -50%);
+            transition: all .3s ease-in-out;
+            z-index: 2;
+            @media #{$lg-device} {
+                right: 39%;
+            }
+            @media #{$md-device} {
+                right: 39%;
+            }
+            @media #{$xsm-device} {
+                right: 39%;
+            }
+            &:hover {
+                background-color: $primary-color;
+                color: $white_color;
+            }
+        }
+    }
+    &__content {
+        background: $white_color;
+        height: 105px;
+        padding: 18px 0px 15px 20px;
+        margin-top: -55px;
+        border-left: 5px solid $primary-color;
+        display: flex;
+        width: 60%;
+        margin-right: 25px;
+        @media #{$xsm-device} {
+            width: 100%;
+            margin-right: 0;
+            margin-top: 30px;
+        }
+    }
+    &__small-img {
+        margin-top: -140px;
+        width: 224px;
+        margin-right: 10px;
+        @media #{$xsm-device} {
+            margin-top: 30px;
+            max-width: 100%;
+        }
+    }
+    &__experience-wrap {
+        display: flex;
+        position: relative;
+        z-index: 3;
+        @media #{$xsm-device} {
+			flex-direction: column;;
+		 }
+            h3 {
+                font-size: 60px;
+                display: inline-block;
+            }
+             p {
+                font-weight: 700;
+                text-transform: uppercase;
+                display: inline-block;
+                margin-left: 20px;
+                position: relative;
+                span {
+                    vertical-align: bottom;
+                    display: inline-block;
+                    color: $primary-color;
+                    position: absolute;
+                    left: -17px;
+                    font-size: 20px;
+                    bottom: 0;
+                }  
+ 
+        }
+    }
+}
+
+.about-right {
+    &__deatils {
+        margin-bottom: 40px;
+        padding-right: 102px;
+    }
+    &__desc.desc-heilight {
+        color: $black;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    &__bottom {
+        display: flex;  
+            @media #{$xsm-device} {
+            flex-direction: column;
+            display: inline-block;
+        }
+    } 
+    &__ceo {
+        display: flex;
+        margin-left: 30px;
+        @media #{$xsm-device} {
+            margin-left: 0px;
+            margin-top: 30px;
+        } 
+
+    }
+    &__img {
+        margin-right: 20px;
+    }
+    &__ceo-text {
+        @media #{$lg-device} {
+            margin-top: 5px;
+        }
+        & h5 {
+            @media #{$lg-device} {
+                font-size: 13px;
+                margin-bottom: 4px;
+            } 
+        }
+    }   
+}
+
+@media #{$lg-device} {
+        .about-right {
+        & .section-title-wrap {
+            &__title {
+                font-size: 35px;
+            }
+        }
+    }
+
+}
+
+
+
+     
+    
+
+
+

@@ -1,0 +1,99 @@
+/*============**  Newsletter  Area **============*/
+.newsletter-area {
+    background-color: $gray_bg;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.newsletter-img {
+    img {
+        @media #{$lg-device} {
+            margin-bottom: -27px;
+        }
+        @media #{$md-device} {
+            margin-bottom: -12px;
+        }
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url(/assets/img/newsletter/newsletter-bg.png);
+        width: 144%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        left: -44%;
+        z-index: -1;
+        bottom: -14%;
+    }
+}
+.newsletter-text {
+    background-color: $white_color;
+    padding: 70px 70px 70px 92px;
+    border-radius: 10px;
+    @media #{$md-device} {
+        padding: 50px 35px 50px 60px;
+    }
+    @media #{$xsm-device} {
+        padding: 50px 0px 50px 30px;
+        margin-bottom: 70px;
+    }
+    @media #{$sm-device} {
+        padding: 50px 23px 50px 80px;
+    }
+    & h2 {
+        font-size: 38px;
+        line-height: 1.3;
+        margin-bottom: 25px;
+        position: relative;
+        &::after {
+            @include afbf;
+            top: 8px;
+            left: -25px;
+            background-color: $primary-color;
+            height: 97%;
+            width: 3px;
+        }
+        @media #{$md-device} {
+            font-size: 25px;
+          }
+        @media #{$xsm-device} {
+            font-size: 25px;
+            padding-right: 15px;
+          }
+    }
+    &__phone {
+        display: flex;
+        & i {
+            display: inline-block;
+            height: 60px;
+            width: 57px;
+            line-height: 65px;
+            text-align: center;
+            background: $primary-color;
+            color: $white_color;
+            font-size: 26px;
+            font-weight: 700;
+            border-radius: 5px;
+            margin-right: 5px;
+          }
+        & a {
+            font-size: 22px;
+            font-weight: 700;
+            background: $service_icon_color;
+            padding: 16px 40px;
+            display: inline-block;
+            border-radius: 5px;
+            color: $black;
+            @media #{$md-device} {
+                font-size: 16px;
+            }
+            @media #{$xsm-device} {
+                font-size: 15px;
+                padding: 16px 17px;
+            }
+        }
+    }
+}

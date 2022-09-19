@@ -1,0 +1,138 @@
+/*============**   Slider Area **============*/
+
+.slider-area {
+    height: 925px;
+    position: relative;
+    overflow: hidden;
+    &.slider-bg {
+        background-image: url(/assets/img/slider/slider-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    @media #{$lg-device} {
+        height: 750px;
+    }
+    @media #{$md-device} {
+        height: 670px;
+    }
+    @media #{$xsm-device} {
+        height: 630px;
+    }
+    & .slider-shape-01 {
+        position: absolute;
+        left: 54%;
+        top: 11%;
+        z-index: 2;   
+        @media #{$xl-device} {
+            left: 47%;
+            top: 17%;
+        }
+        @media #{$lg-device} {
+            left: 29%;
+            top: 11%;
+        }
+        @media #{$md-device} {
+            left: -6%;
+            top: 46%;
+        }
+    }
+    & .slider-shape-02 {
+        position: absolute;
+        right: -10%;
+        top: 87%;
+        z-index: 3;
+         @media #{$xl-device} {
+            right: -3%;
+        }
+         @media #{$lg-device} {
+            right: 44%;
+            top: 33%;
+        }
+         @media #{$md-device} {
+            right: 9%;
+            top: 45%;
+        }
+         @media #{$xsm-device} {
+            right: 51%;
+            top: 19%;
+        }
+    }
+
+    &::after {
+        @include afbf;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $slider-before_color;
+        opacity:96%;
+        z-index: 1;
+    }
+    .slider-content {
+        margin-top: 125px;
+        position: relative;
+        z-index: 3;
+        @media #{$md-device} {
+            margin-top: 100px;
+        }
+        @media #{$xsm-device} {
+            margin-top: 100px;
+        }
+        &__subtitle {
+            font-size: 20px;
+            text-transform: capitalize;
+            font-weight: 600;
+            color: $primary-color;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        &__title {
+            font-size: 65px;
+            color: $black;
+            margin-bottom: 22px;
+            @media #{$lg-device} {
+                font-size: 51px;
+            }
+            @media #{$xsm-device} {
+                font-size: 37px;
+            }
+        }
+        &__desc {
+            width: 75%;
+            margin-bottom: 30px;
+        }
+        &__play-btn {
+            width: 62px;
+            height: 62px;
+            background: $service_icon_color;
+            display: inline-block;
+            line-height: 62px;
+            text-align: center;
+            border-radius: 50%;
+            color: $primary-color;
+            margin-left: 25px;
+            transition: all .3s ease-in-out;
+            &:hover {
+                background-color: $black;
+                color: $white_color;
+        }
+        }
+    } 
+    .banner-img {
+        & img{
+            position: absolute;
+            position: absolute;
+            top: 58px;
+            z-index: 3;
+            right: -71px;
+            @media #{$xl-device} {
+                right: 0px;
+            }
+            @media #{$lg-device} {
+                right: 0px;
+                top: 100px;
+            }
+        }
+    }
+}
